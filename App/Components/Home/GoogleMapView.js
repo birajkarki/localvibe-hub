@@ -31,14 +31,14 @@ export default function GoogleMapView({ placeList }) {
           fontFamily: "raleway-bold",
         }}
       >
-        Top Near By Places
+        Local Business Near You
       </Text>
       <View style={{ borderRadius: 20, overflow: "hidden" }}>
         {location ? (
           <MapView
             style={{
-              width: Dimensions.get("screen").width * 0.89,
-              height: Dimensions.get("screen").height * 0.23,
+              width: Dimensions.get("screen").width * 0.93,
+              height: Dimensions.get("screen").height * 0.33,
             }}
             provider={PROVIDER_GOOGLE}
             showsUserLocation={true}

@@ -1,10 +1,11 @@
 import { View, Text } from "react-native";
 import React from "react";
 import Home from "../Screens/Home";
-import Fav from "../Screens/Fav";
+import About from "../Screens/About";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Search from "../Screens/Search";
 import Profile from "../Screens/Profile";
+import { Entypo } from "@expo/vector-icons";
 import { Ionicons } from "@expo/vector-icons";
 import { FontAwesome } from "@expo/vector-icons";
 
@@ -39,11 +40,11 @@ export default function TabNavigation() {
       />
       <Tab.Screen
         name="Fav"
-        component={Fav}
+        component={About}
         options={{
-          tabBarLabel: "Fav",
+          tabBarLabel: "About",
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="ios-heart" size={24} color="black" />
+            <Entypo name="info" size={24} color="black" />
           ),
         }}
       />

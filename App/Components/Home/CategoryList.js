@@ -7,9 +7,9 @@ export default function CategoryList({ setSelectedCategory }) {
   const categoryList = [
     {
       id: 1,
-      name: "Gas Station",
-      value: "gas_station",
-      icon: require("./../../../assets/gas.png"),
+      name: "Shop",
+      value: "shop",
+      icon: require("./../../../assets/shop.png"),
     },
     {
       id: 2,

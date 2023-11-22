@@ -24,11 +24,12 @@ export default function Header() {
         source={require("./../../../assets/logo.png")}
         style={styles.logo}
       />
+
       <View>
-        <TextInput placeholder="Search" style={styles.searchbar} />
+        <TextInput placeholder="Search" style={styles.searchBar} />
       </View>
       <Image
-        source={require("./../../../assets/placeholder.jpg")}
+        source={require("./../../../assets/user.png")}
         style={styles.userImage}
       />
     </View>
@@ -40,13 +41,14 @@ const styles = StyleSheet.create({
     width: 50,
     height: 50,
   },
-  searchbar: {
+  searchBar: {
     borderWidth: 1,
-    borderColor: Colors.black,
+    borderColor: Colors.GRAY,
     padding: 4,
     borderRadius: 50,
     paddingLeft: 10,
-    width: Dimensions.get("screen").width * 0.6,
+    width: Dimensions.get("screen").width * 0.53,
+    borderColor: Colors.BLACK,
   },
   userImage: {
     width: 50,
